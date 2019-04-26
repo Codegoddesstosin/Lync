@@ -27,7 +27,7 @@ todosUrl:string =  'https://jsonplaceholder.typicode.com/todos';
 
   deleteTodo(todo:Todo):Observable<Todo>
   {
-      const url = `${this.todosUrl}/${todo.id};
+      const url = `${this.todosUrl}/${todo.id}`;
       return this.http.delete<Todo>(url, httpOptions);
   }
 
